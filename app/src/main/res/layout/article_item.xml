@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/iv_arrow"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_byline"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_arrow"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="-2dp"
+        android:src="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_arrow"
+        app:layout_constraintTop_toTopOf="@+id/tv_byline" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+</android.support.constraint.ConstraintLayout>
