@@ -10,7 +10,7 @@ Open terminal in Android studio <br>
 or <br>
 Android studio Toolbar - View -> Tool Window -> Terminal 
 <br><br>
-execute the following commend
+execute the following commend in terminal
 
 `./gradlew jacocoTestReport`
 
