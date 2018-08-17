@@ -3,7 +3,7 @@ This sample application developed with MVVM, Android Architechture Component, Li
 
 # Run Application
 Import this project into Android studio. <br>
-Android studio toolbar - Run -> Run 'app'
+Android studio Toolbar - Run -> Run 'app'
 
 # Executing Test cases & generating Code coverage Report
 Open terminal in Android studio <br>
